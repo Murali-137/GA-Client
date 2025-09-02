@@ -51,11 +51,13 @@ function Navbar() {
 
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${
-          isScrolled
-            ? "bg-white/90 text-gray-800 shadow-md backdrop-blur-md border-b border-gray-200 py-3"
-            : "bg-white py-4"
-        }`}
+        className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50
+    ${
+      isScrolled
+        ? "bg-white/90 text-gray-800 shadow-md backdrop-blur-md border-b border-gray-200 py-3"
+        : "bg-white py-4 border-b border-gray-200 shadow-sm"
+    } 
+  `}
       >
         {/* Logo */}
         <Link to="/">
@@ -149,7 +151,6 @@ function Navbar() {
             >
               Login
             </button>
-            
           )}
         </div>
 

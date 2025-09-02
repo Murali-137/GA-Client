@@ -65,7 +65,7 @@ function Cart() {
 
   const getAddress = async () => {
     try {
-      const { data } = await axios.get("/api/address/get-add");
+      const { data } = await axios.get("/api/address/get-add",{withCredentials: true});
       if (data.success) {
         setAddress(data.addresses);
         if (data.addresses.length > 0) {
@@ -123,7 +123,7 @@ function Cart() {
               <div className="cursor-pointer w-24 h-24 flex items-center justify-center border border-gray-300 rounded overflow-hidden">
                 <img
                   className="max-w-full h-full object-cover"
-                  src={`http://localhost:3000/images/${product.image[0].replace(
+                  src={`https://quibaback.onrender.com/images/${product.image[0].replace(
                     "/uploads/",
                     ""
                   )}`}

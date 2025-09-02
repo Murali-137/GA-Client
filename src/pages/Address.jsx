@@ -26,15 +26,15 @@ const Address = () => {
   const submitHanlder = async (e) => {
     try {
       e.preventDefault();
-      const { data } = await axios.post("/api/address/add-address", { address });
+      const { data } = await axios.post("/api/address/add-address", { address },{ withCredentials: true });
       if (data.success) {
         toast.success(data.message);
         navigate("/cart");
       } else {
-        toast.error(data.message);
+        console.log(data.message);
       }
     } catch (error) {
-      toast.error(error.message);
+      console.log(error.message);
     }
   };
 

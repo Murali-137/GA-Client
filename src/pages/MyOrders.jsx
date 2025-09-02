@@ -56,7 +56,7 @@ const MyOrders = () => {
                   <div className="p-4 rounded-lg">
                     {product?.image?.[0] ? (
                       <img
-                        src={`http://localhost:3000/images/${product.image[0]}`}
+                        src={`https://quibaback.onrender.com/images/${product.image[0]}`}
                         alt={product?.name || "Product"}
                         className="w-16 h-16"
                       />

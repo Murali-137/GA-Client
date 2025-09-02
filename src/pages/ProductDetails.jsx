@@ -47,7 +47,7 @@ function ProductDetails() {
                   className="border max-w-24 border-gray-500/30 rounded overflow-hidden cursor-pointer"
                 >
                   <img
-                    src={`http://localhost:3000/images/${image}`}
+                    src={`https://quibaback.onrender.com/images/${image}`}
                     alt={`Thumbnail ${index + 1}`}
                   />
                 </div>
@@ -56,7 +56,7 @@ function ProductDetails() {
 
             <div className="border border-gray-500/30 max-w-100 rounded overflow-hidden">
               <img
-                src={`http://localhost:3000/images/${thumbnail}`}
+                src={`https://quibaback.onrender.com/images/${thumbnail}`}
                 alt="Selected product"
                 className="w-full h-full object-cover"
               />
@@ -85,10 +85,10 @@ function ProductDetails() {
             </div>
             <div className="mt-6">
               <p className="text-gray-500/70 line-through">
-                MRP: ${product.price}
+                MRP: ₹{product.price}
               </p>
 
-              <p className="text-2xl font-medium">MRP: ${product.offerPrice}</p>
+              <p className="text-2xl font-medium">MRP: ₹{product.offerPrice}</p>
 
               <span className="text-gray-500/70">(inclusive of all taxes)</span>
             </div>

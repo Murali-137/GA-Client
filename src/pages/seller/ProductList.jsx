@@ -59,7 +59,7 @@ function ProductList() {
                   <td className="md:px-4 pl-2 md:pl-4 py-3 flex items-center space-x-3 truncate">
                     <div className="border border-gray-300 rounded overflow-hidden">
                       <img
-                        src={`http://localhost:3000/images/${product.image[0].replace(
+                        src={`https://quibaback.onrender.com/images/${product.image[0].replace(
                           "/uploads/",
                           ""
                         )}`}

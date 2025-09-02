@@ -66,7 +66,7 @@ const Orders = () => {
                   {image ? (
                     <img
                       className="w-16 h-16 object-cover rounded-md"
-                      src={`http://localhost:3000/images/${image}`}
+                      src={`https://quibaback.onrender.com/images/${image}`}
                       alt={product?.name || "Product"}
                     />
                   ) : (
