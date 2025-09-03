@@ -60,14 +60,7 @@ function ProductCard({ product }) {
             className={`group-hover:scale-105 transition max-w-26 md:max-w-36 ${
               imageLoaded ? "opacity-100" : "opacity-0"
             }`}
-            src={
-              imageError
-                ? placeholderImage
-                : `https://quibaback.onrender.com/images/${product.image[0].replace(
-                    "/uploads/",
-                    ""
-                  )}`
-            }
+            src={`https://quibaback.onrender.com/images/${product.image[0].replace("/uploads/", "")}`}
             alt={product.name}
             onLoad={() => setImageLoaded(true)}
             onError={() => setImageError(true)}
